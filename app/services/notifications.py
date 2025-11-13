@@ -51,6 +51,11 @@ def _discord(
     headers = {"Content-Type": "application/json"}
     return _send(webhook_url, data, headers)
 
+def _webhook(msg: str, webhook_url: str, data: dict = {}) -> bool:
+    contents = json.dumps(data | {"content": msg})
+    headers = {"Content-Type": "application/json"}
+    return _send(webhook_url, contents, headers)
+
 
 def _ntfy(
     msg: str,
@@ -118,6 +123,7 @@ def notify(
     event_type: str = "user_joined",
     previous_version: str | None = None,
     new_version: str | None = None,
+    data: dict = {}
 ):
     """Broadcast to every configured agent that is subscribed to the event type."""
     for agent in Notification.query.all():
@@ -136,3 +142,10 @@ def notify(
             _apprise(message, title, tags, agent.url)
         elif agent.type == "notifiarr":
             _notifiarr(message, title, agent.url, agent.channel_id)
+        elif agent.type == "webhook":
+            data["event"] = event_type
+            if previous_version is not None:
+                data["previous_version"] = previous_version
+            if new_version is not None:
+                data["new_version"] = new_version
+            _webhook(message, agent.url, data)

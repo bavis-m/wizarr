@@ -44,6 +44,7 @@
                 <option value="notifiarr"
                         {% if agent.type == 'notifiarr' %}selected{% endif %}>Notifiarr</option>
                 <option value="ntfy" {% if agent.type == 'ntfy' %}selected{% endif %}>Ntfy</option>
+                <option value="webhook" {% if agent.type == 'webhook' %}selected{% endif %}>Webhook</option>
               </select>
             </div>
             <div id="notifiarrSection"
