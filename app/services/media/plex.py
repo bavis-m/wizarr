@@ -1760,6 +1760,7 @@ def handle_oauth_token(app, token: str, code: str) -> None:
             "User Joined",
             f"User {account.username} has joined your server!",
             "tada",
+            data={"email":email, "code":code, "username": account.username},
             event_type="user_joined",
         )
 

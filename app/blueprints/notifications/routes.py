@@ -17,6 +17,7 @@ from app.services.notifications import (  # your existing helpers
     _ntfy,
     _pushover,
     _telegram,
+    _webhook,
 )
 
 notify_bp = Blueprint("notify", __name__, url_prefix="/settings/notifications")
@@ -114,6 +115,10 @@ def create():
                     pushover_user_key,
                     pushover_api_token,
                 )
+        elif form["type"] == "webhook":
+            url = form.get("url")
+            if url:
+                ok = _webhook("Wizarr test message", url, {"event":"test"})
 
         if ok:
             # from Notification.create(**form) to SQLAlchemy ORM
@@ -222,6 +227,11 @@ def edit(agent_id):
                     pushover_user_key,
                     pushover_api_token,
                 )
+        elif form["type"] == "webhook":
+            url = form.get("url")
+            if url:
+                ok = _webhook("Wizarr test message", url, {"event":"test"})
+
 
         if ok:
             # Update the agent with new values
