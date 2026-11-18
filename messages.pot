@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-10-12 10:50+0000\n"
+"POT-Creation-Date: 2026-11-18 11:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1205,20 +1205,20 @@ msgstr ""
 msgid "Join Server"
 msgstr ""
 
-#: app/templates/user-plex-login.html:118
+#: app/templates/user-plex-login.html:121
 #: app/templates/welcome-jellyfin.html:215
 msgid "Secure invitation system powered by Wizarr"
 msgstr ""
 
-#: app/templates/user-plex-login.html:404
+#: app/templates/user-plex-login.html:407
 msgid "Pop-up blocked. Allow pop-ups for this site and try again."
 msgstr ""
 
-#: app/templates/user-plex-login.html:405
+#: app/templates/user-plex-login.html:408
 msgid "Sign-in cancelled. Hit Join Server to try again."
 msgstr ""
 
-#: app/templates/user-plex-login.html:406
+#: app/templates/user-plex-login.html:409
 msgid "Plex sign-in failed. Try again, or contact your server admin."
 msgstr ""
 
@@ -1728,11 +1728,11 @@ msgstr ""
 #: app/templates/modals/connection-form.html:194
 #: app/templates/modals/create-admin.html:48
 #: app/templates/modals/create-api-key.html:82
-#: app/templates/modals/create-notification-agent.html:180
+#: app/templates/modals/create-notification-agent.html:181
 #: app/templates/modals/create-server.html:196
 #: app/templates/modals/edit-admin.html:50
 #: app/templates/modals/edit-identity.html:50
-#: app/templates/modals/edit-notification-agent.html:200
+#: app/templates/modals/edit-notification-agent.html:201
 #: app/templates/modals/edit-server.html:207
 #: app/templates/modals/invite.html:387
 #: app/templates/modals/wizard-bundle-form.html:34
@@ -1961,64 +1961,64 @@ msgstr ""
 msgid "New Agent"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:75
-#: app/templates/modals/edit-notification-agent.html:60
+#: app/templates/modals/create-notification-agent.html:76
+#: app/templates/modals/edit-notification-agent.html:61
 msgid "User Key"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:81
-#: app/templates/modals/edit-notification-agent.html:68
+#: app/templates/modals/create-notification-agent.html:82
+#: app/templates/modals/edit-notification-agent.html:69
 msgid "API Token"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:91
-#: app/templates/modals/edit-notification-agent.html:85
+#: app/templates/modals/create-notification-agent.html:92
+#: app/templates/modals/edit-notification-agent.html:86
 msgid "Channel ID"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:101
-#: app/templates/modals/edit-notification-agent.html:102
+#: app/templates/modals/create-notification-agent.html:102
+#: app/templates/modals/edit-notification-agent.html:103
 msgid "Bot Token"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:107
-#: app/templates/modals/edit-notification-agent.html:110
+#: app/templates/modals/create-notification-agent.html:108
+#: app/templates/modals/edit-notification-agent.html:111
 msgid "Chat ID"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:118
-#: app/templates/modals/edit-notification-agent.html:128
+#: app/templates/modals/create-notification-agent.html:119
+#: app/templates/modals/edit-notification-agent.html:129
 msgid "Username (optional)"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:126
-#: app/templates/modals/edit-notification-agent.html:137
+#: app/templates/modals/create-notification-agent.html:127
+#: app/templates/modals/edit-notification-agent.html:138
 msgid "Password (optional)"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:135
-#: app/templates/modals/edit-notification-agent.html:153
+#: app/templates/modals/create-notification-agent.html:136
+#: app/templates/modals/edit-notification-agent.html:154
 msgid "Agent URL"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:144
-#: app/templates/modals/edit-notification-agent.html:163
+#: app/templates/modals/create-notification-agent.html:145
+#: app/templates/modals/edit-notification-agent.html:164
 msgid "Notification Events"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:155
-#: app/templates/modals/edit-notification-agent.html:175
+#: app/templates/modals/create-notification-agent.html:156
+#: app/templates/modals/edit-notification-agent.html:176
 #: app/templates/settings/notifications.html:84
 msgid "User Joined"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:167
-#: app/templates/modals/edit-notification-agent.html:187
+#: app/templates/modals/create-notification-agent.html:168
+#: app/templates/modals/edit-notification-agent.html:188
 #: app/templates/settings/notifications.html:89
 msgid "Update Available"
 msgstr ""
 
-#: app/templates/modals/create-notification-agent.html:175
+#: app/templates/modals/create-notification-agent.html:176
 msgid "Test & Create Agent"
 msgstr ""
 
@@ -2077,7 +2077,7 @@ msgstr ""
 msgid "Notification Service"
 msgstr ""
 
-#: app/templates/modals/edit-notification-agent.html:195
+#: app/templates/modals/edit-notification-agent.html:196
 msgid "Test & Save Changes"
 msgstr ""
 
